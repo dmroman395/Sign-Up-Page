@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import './variables.scss';
+@import './mixins.scss';
+
+body {
+    background-color: $brandRed;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', saans-serif;
+}
+
+.backOverlay {
+    background: url('./images/bg-intro-desktop.png');
+    height: 100%;
+    padding: 125px 150px;
+    @include flexCenter(column);
+}
+
+section {
+    @include flexCenter(row); 
+    height: 100%;
+    .leftHalf {
+        @include flexCenter(column);
+        color: white;
+        max-width: 550px;
+        h1 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 55px;
+            margin-bottom: 30px;
+        }
+        p {
+            font-weight: 400;
+        }
+    }
+    .rightHalf {
+        @include flexCenter(column);
+        justify-content: space-between;
+        min-height: 525px;
+        min-width: 500px;
+        div {
+            background-color: $brandPurple;
+            @include boxShadow(rgba(0,0,0,.2));
+            border-radius: 5px;
+            color: white;
+            height: $rightHalfElms;
+            @include flexCenter(row);
+            width: 100%;
+            font-weight: 200;
+            font-size: 15px;
+            span {
+                font-weight: 600;
+            }
+        }
+        form {
+            @include gridDisp;
+            @include boxShadow(rgba(0,0,0,.2));
+            border-radius: 5px;
+            background-color: white;
+            width: 100%;
+            .field{
+                height: $rightHalfElms;
+                padding-left: 25px;
+                color: $brandBlack;
+                font-weight: bold;
+                border: 1px solid #DEDEDE;
+                border-radius: 5px;
+            }
+            .field::placeholder {
+                color: lighten($brandBlack, 15%);
+                font-weight: bold;
+            }
+            .field:focus {
+                outline-color: $brandPurple;
+            }
+            button {
+                background-color: $brandGreen;
+                @include boxShadow(darken($brandGreen, 5%));
+                border-radius: 5px;
+                color: white;
+                border: 0;
+                text-transform: uppercase;
+                height: $rightHalfElms;
+                @include flexCenter(column);
+                font-weight: 500;
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+            p {
+                color: #BAB7D4;
+                font-size: 11px;
+                text-align: center;
+                position: relative;
+                bottom: 5px;
+            }
+            span {
+                color: #FF7979;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    @include flexCenter(row);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+

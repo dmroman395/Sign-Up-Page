@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ff7979;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', saans-serif;
+}
+
+.backOverlay {
+  background: url("./images/bg-intro-desktop.png");
+  height: 100%;
+  padding: 125px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+section .leftHalf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  max-width: 550px;
+}
+
+section .leftHalf h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 30px;
+}
+
+section .leftHalf p {
+  font-weight: 400;
+}
+
+section .rightHalf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 525px;
+  min-width: 500px;
+}
+
+section .rightHalf div {
+  background-color: #5E54A4;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: white;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+section .rightHalf div span {
+  font-weight: 600;
+}
+
+section .rightHalf form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 25px;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  width: 100%;
+}
+
+section .rightHalf form .field {
+  height: 55px;
+  padding-left: 25px;
+  color: #3D3B48;
+  font-weight: bold;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+}
+
+section .rightHalf form .field::-webkit-input-placeholder {
+  color: #615d72;
+  font-weight: bold;
+}
+
+section .rightHalf form .field:-ms-input-placeholder {
+  color: #615d72;
+  font-weight: bold;
+}
+
+section .rightHalf form .field::-ms-input-placeholder {
+  color: #615d72;
+  font-weight: bold;
+}
+
+section .rightHalf form .field::placeholder {
+  color: #615d72;
+  font-weight: bold;
+}
+
+section .rightHalf form .field:focus {
+  outline-color: #5E54A4;
+}
+
+section .rightHalf form button {
+  background-color: #38CC8B;
+  -webkit-box-shadow: 0px 5px #30bb7e;
+          box-shadow: 0px 5px #30bb7e;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+section .rightHalf form p {
+  color: #BAB7D4;
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+}
+
+section .rightHalf form span {
+  color: #FF7979;
+  font-weight: 600;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
